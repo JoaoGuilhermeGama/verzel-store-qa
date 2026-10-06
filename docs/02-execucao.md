@@ -7,9 +7,9 @@ Data da execução: `__/__/____` | Navegador: `________` | Executor: João Guilh
 **Legenda:** ✅ Passou · ❌ Falhou · ⛔ Bloqueado · ⬜ Não executado
 Os cenários completos (Gherkin) estão em [`docs/01-cenarios`](01-cenarios/). Evidências em [`04-evidencias.md`](04-evidencias.md). Bugs em [`03-bugs.md`](03-bugs.md).
 
-## 1. Matriz de cálculo (UI e API)
+## 1. Matriz de cálculo (tela e API)
 
-Resultado esperado derivado da documentação. A coluna "UI" é o que a tela mostrou; "API" é a resposta de `/api/carrinho/calcular` (automatizado em `automacao/tests/api/calculo.api.spec.ts`).
+Resultado esperado derivado da documentação. A coluna "UI" é o que a tela mostrou (execução manual); "API" é a resposta de `/api/carrinho/calcular` (automatizado em `automacao/tests/api/calculo.api.spec.ts`).
 
 | ID | Itens | Cupom | Subtotal | Desconto | Frete | Total | Faltante | UI | API | Bug |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -30,17 +30,17 @@ Resultado esperado derivado da documentação. A coluna "UI" é o que a tela mos
 
 | ID | Cenário | CA | Tipo | Esperado | Resultado | Bug | Obs. |
 |---|---|---|---|---|---|---|---|
-| CP-001 | Cupom BEMVINDO10 aplica 10% | CA01 | Manual + UI auto | Desconto 10% sobre subtotal | ⬜ | | |
+| CP-001 | Cupom BEMVINDO10 aplica 10% | CA01 | Manual + API auto | Desconto 10% sobre subtotal | ⬜ | | |
 | CP-002 | Cupom sem diferenciar maiúsculas/minúsculas | CA02 | Manual + API auto | `bemvindo10` e `BemVindo10` aplicam | ⬜ | | |
-| CP-003 | Espaços nas pontas ignorados | CA02 | Manual + UI auto | `  BEMVINDO10  ` aplica | ⬜ | | |
-| CP-004 | Cupom inexistente | CA03 | Manual + UI auto | "Cupom inválido." sem desconto | ⬜ | | |
-| CP-005 | Cupom expirado | CA04 | Manual + UI auto | "Cupom expirado." sem desconto | ⬜ | | |
+| CP-003 | Espaços nas pontas ignorados | CA02 | Manual + API auto | `  BEMVINDO10  ` aplica | ⬜ | | |
+| CP-004 | Cupom inexistente | CA03 | Manual + API auto | "Cupom inválido." sem desconto | ⬜ | | |
+| CP-005 | Cupom expirado | CA04 | Manual + API auto | "Cupom expirado." sem desconto | ⬜ | | |
 | CP-006 | Só um cupom por vez / trocar | CA05 | Manual | Mantém o atual; troca só após remover | ⬜ | | |
 | CP-007 | Remover cupom recalcula | CA05 | Manual | Desconto zera, total recalculado | ⬜ | | |
 | CP-008 | Códigos malformados | CA02 | Exploratório | Sem desconto e sem erro técnico | ⬜ | | |
 | CP-009 | Alterar quantidade com cupom | CA01 | Manual | Recalcula tudo | ⬜ | | |
 | FR-001 | Abaixo de R$ 200 cobra R$ 19,90 | CA07 | Manual | Frete 19,90 + faltante exibido | ⬜ | | |
-| FR-002 | Subtotal = R$ 200,00 | CA06 | Manual + UI auto | Frete grátis | ⬜ | | |
+| FR-002 | Subtotal = R$ 200,00 | CA06 | Manual + API auto | Frete grátis | ⬜ | | |
 | FR-003 | Subtotal = R$ 199,80 | CA07 | Manual | Frete 19,90; falta 0,20 | ⬜ | | |
 | FR-004 | Frete usa subtotal antes do cupom | CA08 | Manual + API auto | Frete 0 com subtotal 200 e cupom | ⬜ | | |
 | FR-005 | Desconto não incide no frete | CA09 | Manual + API auto | Total = 190,81 | ⬜ | | |

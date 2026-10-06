@@ -72,7 +72,7 @@ Funcionalidade: API da Verzel Store
       | produtoId inexistente              | PRODUTO_NAO_ENCONTRADO |
       | mesmo produto duas vezes           | ITEM_DUPLICADO         |
 
-  @API-ui @API-consistencia
+  @API-016 @manual
   Cenário: API-016 Valores exibidos na interface coincidem com os da API
     Dado um carrinho montado na interface
     Quando comparo com a resposta de "/api/carrinho/calcular" para os mesmos itens

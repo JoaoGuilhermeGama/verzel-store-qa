@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 
 const BASE_URL =
   process.env.BASE_URL ?? 'https://verzel-store.qa-test-verzel-store.workers.dev';
@@ -14,15 +14,6 @@ export default defineConfig({
   use: {
     baseURL: BASE_URL,
     trace: 'on-first-retry',
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
   },
-  projects: [
-    { name: 'api', testMatch: /.*\.api\.spec\.ts/ },
-    {
-      name: 'ui',
-      testMatch: /.*\.ui\.spec\.ts/,
-      use: { ...devices['Desktop Chrome'] },
-    },
-  ],
+  projects: [{ name: 'api', testMatch: /.*\.api\.spec\.ts/ }],
 });

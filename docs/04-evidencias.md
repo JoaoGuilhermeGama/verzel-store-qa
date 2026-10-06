@@ -21,7 +21,6 @@ Relatório do Playwright (execução em `__/__/____`): print do resumo em `../ev
 | Suíte | Total | Passou | Falhou |
 |---|---|---|---|
 | API | | | |
-| UI | | | |
 
 ## Como imagens aparecem aqui
 
