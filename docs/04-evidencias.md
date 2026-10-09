@@ -5,14 +5,14 @@ Todas as imagens e vídeos ficam em [`/evidencias`](../evidencias/). Convenção
 
 | Cenário / Bug | Resultado | Evidência | Observação |
 |---|---|---|---|
-| CALC-01 | ⬜ | `../evidencias/CALC-01_passou.png` | |
-| CALC-04 | ⬜ | `../evidencias/CALC-04_passou.png` | |
-| CALC-05 | ⬜ | `../evidencias/CALC-05_passou.png` | |
-| CALC-07 | ⬜ | `../evidencias/CALC-07_passou.png` | |
-| CP-004 | ⬜ | `../evidencias/CP-004_passou.png` | |
-| CP-005 | ⬜ | `../evidencias/CP-005_passou.png` | |
-| QT-002 | ⬜ | `../evidencias/QT-002_passou.png` | |
-| API-007 | ⬜ | `../evidencias/API-007_resposta.png` | |
+| CALC-01 |✅ | `../evidencias/CALC-01_passou.png` | |
+| CALC-04 | ✅ | `../evidencias/CALC-04_passou.png` | |
+| CALC-05 | ✅ | `../evidencias/CALC-05_passou.png` | |
+| CALC-07 | ✅ | `../evidencias/CALC-07_passou.png` | |
+| CP-004 | ✅ | `../evidencias/CP-004_passou.png` | |
+| CP-005 | ✅ | `../evidencias/CP-005_passou.png` | |
+| QT-002 | ✅ | `../evidencias/QT-002_passou.png` | |
+| API-007 | ✅ | `../evidencias/API-007_resposta.png` | |
 
 ## Evidência da automação
 
