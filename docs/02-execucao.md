@@ -88,7 +88,6 @@ Os cenários completos (Gherkin) estão em [`docs/01-cenarios`](01-cenarios/). E
 | Carrinho: recarregar, voltar/avançar, carrinho vazio | ✅| | |
 | Cupom: entradas incomuns (vazio, espaços, símbolos, textos longos) | ✅| | |
 | Quantidade: campo numérico, cliques rápidos, valores extremos | ✅| | |
-| Checkout: alterar carrinho durante o preenchimento | ✅| | |
-| Layout: mobile, zoom, mensagens de erro, estados vazios | ✅| | |
-
+| Checkout: alterar carrinho durante o preenchimento |✅ | | |
+| Layout: mobile, zoom, mensagens de erro, estados vazios |✅ | | |
 
